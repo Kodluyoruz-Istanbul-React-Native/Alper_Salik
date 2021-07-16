@@ -1,1 +1,0 @@
-# Alper_Salik
