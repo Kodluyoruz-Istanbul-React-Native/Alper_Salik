@@ -25,27 +25,20 @@ const App = () =>{
                     <View style={{ height: getSBH(), backgroundColor: "white" }} />
 
                     <View style={{
-                        flex: 0.1,
+                       
                         justifyContent: "center",
                         alignItems: "center",
-
+                        
                     }}>
-                        <Text style={{ color: "gray" }}>
+                        <Text style={{ color: "gray", marginTop:20}}>
                             Türkçe ⌵
                         </Text>
+                        <Image source={require('./insta2.png')} style={{ width: 180, height: 80, marginTop:80}} />
                     </View>
 
+                    
                     <View style={{
-                        flex: 0.2,
-                        justifyContent: "center",
-                        alignItems: "center",
-
-                    }}>
-                        <Image source={require('./insta2.png')} style={{ width: "45%", height: "40%", marginTop: 50 }} />
-
-                    </View>
-                    <View style={{
-                        flex: 0.6,
+                      
                         justifyContent: "center",
                         alignItems: "center"
                     }}>
@@ -58,7 +51,6 @@ const App = () =>{
                             borderWidth: 1,
                             borderColor: 'rgba(189, 195, 199, 0.7)',
                             borderRadius: 5,
-                            marginTop: 40,
                             width: "85%"
                         }}
                             placeholder="Telefon numarası, e-posta adresi veya kullanıcı adı"
