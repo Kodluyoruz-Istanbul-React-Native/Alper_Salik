@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "257582803074",
+    "project_id": "instagramclone-108ec",
+    "storage_bucket": "instagramclone-108ec.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:257582803074:android:f2b7c4d5b54f339dd4ec9b",
+        "android_client_info": {
+          "package_name": "com.homework3"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "257582803074-o4oodegt6veo4ktg7jr8pgkacg5rukfb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDz6B_5OKhniQluMZi9497Zy9fi8B2Mx_g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "257582803074-o4oodegt6veo4ktg7jr8pgkacg5rukfb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
