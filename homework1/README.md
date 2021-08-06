@@ -3,7 +3,7 @@
  ### Instagram mobil uygulamasının login sayfası tasarlandı.
  
 <div>
-<img src="loginScreen.png" alt="Instagram Login Page" width="350" height="500"/>
+<img src="loginScreen.png" alt="Instagram Login Page" width="350" height="750"/>
 </div>
 
  
