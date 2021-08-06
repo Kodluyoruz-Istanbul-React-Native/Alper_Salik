@@ -3,6 +3,7 @@ import { SafeAreaView, View, TextInput, FlatList, StyleSheet, Image} from 'react
 import story_data from './story_data.json';
 import Card from './Card/Card';
 import AntDesign from 'react-native-vector-icons/AntDesign';
+import {KeyboardAwareScrollView} from 'react-native-keyboard-aware-scroll-view';
 const Home = () => {
   const renderPost = ({ item }) => <Card news={item} />;
   const numColumns = 3;
@@ -13,7 +14,7 @@ const Home = () => {
         <FlatList 
           ListHeaderComponent={() => (
           <>
-            <TextInput style={styles.input} placeholder={' Search'}></TextInput>
+            <TextInput style={styles.input} placeholder={' Search'}/>
           </>
           )}
           data={story_data}

@@ -14,18 +14,19 @@ import Discover from './pages/discoverPage/Discover';
 import Reels from './pages/reelsPage/Reels';
 import Store from './pages/storePage/Store';
 import Profile from './pages/storePage/Store';
-
+import VectorImage from 'react-native-vector-image';
 const Tab = createBottomTabNavigator();
 function App() {
   return (
-    <NavigationContainer style={{padding:10}}>
-      <Tab.Navigator style={{padding:10}}>
+    <NavigationContainer >
+      <Tab.Navigator screenOptions={{ headerShown: false}} style={{position: 'absolute'}} >
         <Tab.Screen
           name="Home"
           component={Home}
           options={{
           tabBarLabel: 'Home',
-          tabBarIcon: ({ color, size }) => (
+            tabBarIcon: ({ focused }) => (
+            //<VectorImage source={require('./insta.svg')} />
             <Entypo name="home" color={"black"} size={32} />
           ),
         }}/>
