@@ -3,8 +3,12 @@ import React from 'react';
 
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
-//import { MaterialCommunityIcons } from '@expo/vector-icons';
+import AntDesign from 'react-native-vector-icons/AntDesign';
+import Entypo from 'react-native-vector-icons/Entypo';
+import Foundation from 'react-native-vector-icons/Foundation';
+import Feather from 'react-native-vector-icons/Feather';
+import FontAwesome from 'react-native-vector-icons/FontAwesome'; 
+//import { AntDesign } from '@expo/vector-icons';
 import Home from './pages/homePage/Home';
 import Discover from './pages/discoverPage/Discover';
 import Reels from './pages/reelsPage/Reels';
@@ -14,24 +18,54 @@ import Profile from './pages/storePage/Store';
 const Tab = createBottomTabNavigator();
 function App() {
   return (
-    <NavigationContainer>
-      <Tab.Navigator>
+    <NavigationContainer style={{padding:10}}>
+      <Tab.Navigator style={{padding:10}}>
         <Tab.Screen
           name="Home"
           component={Home}
           options={{
           tabBarLabel: 'Home',
           tabBarIcon: ({ color, size }) => (
-            <MaterialCommunityIcons name="home" color={"black"} size={32} />
+            <Entypo name="home" color={"black"} size={32} />
           ),
         }}/>
-        <Tab.Screen name="Discover" component={Discover} />
-        <Tab.Screen name="Reels" component={Reels} />
-        <Tab.Screen name="Store" component={Store} />
-        <Tab.Screen name="Profile" component={Profile} options={{
+        <Tab.Screen
+          name="Discover"
+          component={Discover}
+          options={{
+          tabBarLabel: 'Discover',
+          tabBarIcon: ({ color, size }) => (
+            <AntDesign name="search1" color={"black"} size={32} />
+          ),
+        }}
+        />
+        <Tab.Screen
+          name="Reels"
+          component={Reels}
+          options={{
+          tabBarLabel: 'Reels',
+          tabBarIcon: ({ color, size }) => (
+            <Foundation name="play-video" color={"black"} size={32} />
+          ),
+          }}
+        />
+        <Tab.Screen
+          name="Store"
+          component={Store}
+          options={{
+          tabBarLabel: 'Store',
+          tabBarIcon: ({ color, size }) => (
+            <Feather name="shopping-bag" color={"black"} size={32} />
+          ),
+          }}
+        />
+        <Tab.Screen
+          name="Profile"
+          component={Profile}
+          options={{
           tabBarLabel: 'Profile',
           tabBarIcon: ({ color, size }) => (
-            <MaterialCommunityIcons name="account" color={color} size={size} />
+            <FontAwesome name="user-circle" color={"black"} size={32} />
           ),
         }}/>
       </Tab.Navigator>
